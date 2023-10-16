@@ -1,0 +1,3 @@
+npm init
+node compile.js
+npm run test
