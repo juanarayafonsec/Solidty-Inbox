@@ -1,4 +1,4 @@
-//import {assert} from 'assert';   
+const assert = require('assert'); 
 const  {Web3} = require('web3');
 const  ganache = require('ganache');
 const web3 = new Web3(ganache.provider());
@@ -20,5 +20,6 @@ beforeEach( async()  => {
 describe('Inbox', () => {
     it('deploys a contract', () => {
         console.log(inbox);
+        assert.ok(inbox.options.address);
     });
 });
